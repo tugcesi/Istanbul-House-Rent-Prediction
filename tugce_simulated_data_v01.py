@@ -1013,8 +1013,8 @@ def simulate_fiyat(baslik: str, oda: str, konum: str, metrekare: str = "") -> st
     # 6. Fiyat hesapla (lokasyon baskın)
     fiyat = int(kullanilan_m2 * m2_birim_noisy * villa_carpan)
 
-    # 7. Minimum fiyat: İstanbul'da 20.000 TL altı kira yok
-    fiyat = max(20000, fiyat)
+    # 7. Minimum fiyat: İstanbul'da 15.000 TL altı kira yok
+    fiyat = max(15000, fiyat)
     fiyat = round(fiyat / 500) * 500
 
     return str(fiyat)
