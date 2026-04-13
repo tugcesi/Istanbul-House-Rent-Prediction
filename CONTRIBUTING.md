@@ -70,7 +70,7 @@ Bir hata buldunuz mu ya da yeni bir özellik mi öneriyorsunuz?
 Bu proje **PEP 8** standartlarını takip etmektedir:
 
 - Girinti: **4 boşluk** (tab değil)
-- Maksimum satır uzunluğu: **88 karakter** (Black formatı)
+- Maksimum satır uzunluğu: **79 karakter** (PEP 8 standardı)
 - Fonksiyon ve değişken isimleri: `snake_case`
 - Sınıf isimleri: `PascalCase`
 - Sabit değerler: `UPPER_CASE`
