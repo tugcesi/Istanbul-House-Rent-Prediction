@@ -3,34 +3,49 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.env
-*.venv
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
 venv/
 env/
-.Python
+.venv/
+.env/
+
+# Environment variables
+.env
 
 # Jupyter Notebook
 .ipynb_checkpoints/
 *.ipynb_checkpoints
-
-# Data & Model (büyük dosyalar — isteğe bağlı)
-# *.csv
-# *.h5
-# *.pkl
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Logs
 *.log
 logs/
 
-# Distribution
-dist/
-build/
-*.egg-info/
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# NOTE: Büyük model ve veri dosyaları — gerekirse aşağıdaki satırları aktif edin:
+# Large model and data files — uncomment below if you don't want to track them:
+# *.h5
+# *.pkl
+# *.csv
