@@ -61,10 +61,10 @@ for k, v in defaults.items():
 # ── MODEL ─────────────────────────────────────────────────────────────────────
 @st.cache_resource(show_spinner=False)
 def load_artifacts():
-    mdl = load_model("src/istanbul_rent_model.h5", compile=False)
-    with open("src/scaler.pkl", "rb") as f:
+    mdl = load_model("istanbul_rent_model.h5", compile=False)
+    with open("scaler.pkl", "rb") as f:
         scl = pickle.load(f)
-    with open("src/feature_columns.pkl", "rb") as f:
+    with open("feature_columns.pkl", "rb") as f:
         fc = pickle.load(f)
     return mdl, scl, fc
 
